@@ -108,3 +108,87 @@ menu css for the symbol that shows on the web page */
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+/*footer from https://codepen.io/The-Code-Master/pen/XWaWgeG*/
+
+.foot-ul {
+    margin: 0;
+    padding: 0;
+}
+
+.foot-ul li {
+    list-style: none;
+}
+
+.social-media {
+    width: 10%;
+    filter: brightness(0%);
+    margin: 1vw;
+}
+
+#footer-content a {
+    color: rgb(37, 50, 87);
+    margin: 10px;
+}
+
+#footer-content {
+    width: 100%;
+    background-color: rgba(26, 32, 51, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, box-shadow 0.5s;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+.contact1 p {
+    font-size: 14px;
+}
+
+.topBtn {
+    outline: none;
+    border: 2px solid rgb(74, 87, 122);
+    background-color: rgb(37, 50, 87);
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+
+.topBtn:hover {
+    background-color: rgb(51, 63, 97);
+}
+
+.up-symbol {
+    font-size: 2vw;
+}
+
+.fix {
+    float: left;
+    width: 100%;
+}

@@ -43,6 +43,38 @@
     </script>
 
 
-
+    <!--footer-->
+    <footer id="footer-content">
+        <!-- top scroll button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
+        <button onclick="topFunction()" class="topBtn" title="Go to top">&uarr; Back to top</button>
+        <script>
+            mybutton = document.getElementsByClasses("topBtn");
+    
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+        <ul class="foot-ul">
+            <div id="icon-container">
+                <a href="https://www.instagram.com/alexisvorley/" target="blank">
+                    <div class="icon">
+                        <li><i class="fa fa-instagram"></i></li>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/allie-vorley-a3116120b/" target="blank">
+                    <div class="icon">
+                        <li><i class="fa fa-linkedin"></i></li>
+                    </div>
+                </a>
+                <a href="mailto:allievorley@gmail.com">
+                    <div class="icon">
+                        <li><i class="fa fa-envelope"></i></li>
+                    </div>
+                </a>
+            </div>
+        </ul>
+        <p class="copyright">&copy 2024 Alexis Vorley</p>
+    </footer>
 </body>
 </html>
