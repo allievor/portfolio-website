@@ -11,9 +11,87 @@
     <!--icons for footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
-   
+   <!--on scroll animations-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <script>
+       wow = new WOW({
+           boxClass: 'wow',
+           animateClass: 'animated',
+           offset: 0,
+           mobile: true,
+           live: true
+       })
+       wow.init();
+   </script>
 
     <style>
+        
+        .heading {
+            float: left;
+            width: 100%;
+            text-align: center;
+        }
+
+        .about-container {
+            float: left;
+            width: 100%;
+        }
+        .row {
+            float: left;
+            width: 100%;
+        }
+
+        .headshot-container {
+            float: left;
+            width: 30%;
+        }
+        .hobbies {
+            float: left;
+            width: 29%;
+            padding: 2%;
+        }
+        .hobbies-img {
+            float: left;
+            width: 18%;
+            padding: 0 2%;
+        }
+
+        .headshot {
+            width: 70%;
+            height: auto;
+            border-radius: 100%;
+            border: 3px solid white;
+            margin-left: 35%;
+        }
+        
+        img:hover {
+            box-shadow: 15px 15px 12px rgb(13, 22, 48);
+            transform: scaleX(1.05) scaleY(1.05);
+            transition: 0.5s;
+        }
+        
+        .bio {
+            float: left;
+            width: 60%;
+            padding: 5%;
+        }
+
+        .link {
+            background-color: rgb(55, 71, 115);
+            color: white;
+            padding: 5% 20%;
+            text-decoration: none;
+        }
+
+        .link-container {
+            float: left;
+            width: 30%;
+        }
+
+        .link:hover {
+            background-color: rgb(65, 83, 133);
+        }
 
     </style>
 </head>
@@ -45,6 +123,48 @@
             document.getElementById("myNav").style.width = "0%";
         }
     </script>
+
+<!--main content-->       
+<h1 class="title wow fadeIn">ABOUT</h1>
+
+<div class="about-container">
+    <div class="row">
+        <div class="headshot-container">
+            <img src="images/headshot.JPG" class="headshot wow fadeInLeft">
+        </div>
+        <div class="bio wow fadeInRight">
+            <h2>Hi, I'm Alexis Vorley!</h2>
+            <p>I’m a junior at Davidson College majoring in Computer Science with a minor in Education Studies.</p>
+            <p>I bring an interdisciplinary background across tech, education, writing, and the arts, with skills in Python, Java, R, web development, data visualization, and UX design. My experiences in research, nonprofits, and teaching have strengthened my communication and problem-solving abilities.</p>
+            <p>I’m excited to explore new ways to combine my diverse interests and create a genuine positive impact. I am passionate about fostering inclusion in STEM education, expanding access to the arts, and prioritizing sustainability. </p>
+            <div class="link-container">
+                <h3><a href="mailto:allievorley@gmail.com" class="link">EMAIL</a></h3>
+            </div>
+            <div class="link-container">
+                <h3><a href="images/resume.pdf" class="link" target="blank">RESUME</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 2%;">
+    <div class="hobbies wow fadeInLeft">
+        <h2>In my free time...</h2>
+        <p>Growing up in the Pacific Northwest fostered my love of the outdoors. I love exploring new areas through hiking, backpacking, skiing, and swimming. 
+
+            I also love learning new creative hobbies; most recently, I taught myself to sew and embroider.
+            When I'm not outdoors or creating, I can be found curled up with a good memoir or mystery novel!
+        </p>
+    </div>
+    <div class="hobbies-img wow fadeInUp"> 
+        <img src="images/allie-1.jpeg" style="float: left; width: 100%;">
+    </div>   
+    <div class="hobbies-img wow fadeInUp">
+        <img src="images/allie-2.jpeg" style="float: left; width: 100%;">
+    </div>   
+    <div class="hobbies-img wow fadeInUp">
+        <img src="images/allie-3.jpeg" style="float: left; width: 100%;">
+    </div>   
+</div>
 
     <!--footer-->
     <footer id="footer-content">
